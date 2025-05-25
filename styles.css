@@ -781,6 +781,126 @@ main {
     line-height: 1.5;
 }
 
+/* Education Section */
+.education-section {
+    padding: 112px 0;
+}
+
+.education-content {
+    margin-top: 48px;
+}
+
+.education-item {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.education-period {
+    min-width: 180px;
+    flex-shrink: 0;
+}
+
+.education-details {
+    flex: 1;
+    border: 1px solid #ABB2BF;
+    background: #282C33;
+    padding: 24px;
+}
+
+.university-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.university-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.university-logo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #C778DD;
+    color: #282C33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.university-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 4px;
+}
+
+.university-details {
+    flex: 1;
+}
+
+.degree-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.university-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.degree-field {
+    font-size: 14px;
+    color: #ABB2BF;
+    margin-bottom: 8px;
+}
+
+.academic-info {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.gpa {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C778DD;
+    background: transparent;
+    border: 1px solid #C778DD;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.grade-status {
+    font-size: 14px;
+    color: #ABB2BF;
+    background: transparent;
+    border: 1px solid #ABB2BF;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.education-description {
+    margin-top: 16px;
+}
+
+.education-description p {
+    font-size: 14px;
+    color: #ABB2BF;
+    line-height: 1.5;
+}
+
 .about-content {
     display: flex;
     gap: 167px;
@@ -1505,12 +1625,18 @@ main {
         padding: 60px 0;
     }
 
-    .experience-item {
+    .education-section {
+        padding: 60px 0;
+    }
+
+    .experience-item,
+    .education-item {
         flex-direction: column;
         gap: 16px;
     }
 
-    .experience-period {
+    .experience-period,
+    .education-period {
         min-width: auto;
     }
 
@@ -1968,7 +2094,8 @@ main {
     .about-section,
     .skills-section,
     .fun-facts-section,
-    .experience-section {
+    .experience-section,
+    .education-section {
         padding: 32px 0 60px;
     }
 
@@ -2006,33 +2133,41 @@ main {
         gap: 32px;
     }
 
-    .experience-details {
+    .experience-details,
+    .education-details {
         padding: 16px;
     }
 
-    .company-info {
+    .company-info,
+    .university-info {
         gap: 12px;
     }
 
-    .company-logo {
+    .company-logo,
+    .university-logo {
         width: 40px;
         height: 40px;
     }
 
-    .job-title {
+    .job-title,
+    .degree-title {
         font-size: 18px;
     }
 
-    .company-name {
+    .company-name,
+    .university-name {
         font-size: 14px;
     }
 
     .job-type,
-    .duration {
+    .duration,
+    .degree-field {
         font-size: 12px;
     }
 
-    .skill-tag {
+    .skill-tag,
+    .gpa,
+    .grade-status {
         font-size: 10px;
         padding: 2px 6px;
     }
