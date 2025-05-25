@@ -648,6 +648,139 @@ main {
     padding: 112px 0;
 }
 
+/* Experience Section */
+.experience-section {
+    padding: 112px 0;
+}
+
+.experience-content {
+    margin-top: 48px;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.experience-item {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.experience-period {
+    min-width: 180px;
+    flex-shrink: 0;
+}
+
+.period-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #C778DD;
+    background: #282C33;
+    border: 1px solid #C778DD;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.experience-details {
+    flex: 1;
+    border: 1px solid #ABB2BF;
+    background: #282C33;
+    padding: 24px;
+}
+
+.company-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.logo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #C778DD;
+    color: #282C33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.company-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 4px;
+}
+
+.company-details {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.company-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.job-type {
+    font-size: 14px;
+    color: #ABB2BF;
+    margin-bottom: 4px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #ABB2BF;
+    margin-bottom: 12px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skill-tag {
+    background: transparent;
+    border: 1px solid #ABB2BF;
+    color: #ABB2BF;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.job-description {
+    margin-top: 16px;
+}
+
+.job-description p {
+    font-size: 14px;
+    color: #ABB2BF;
+    line-height: 1.5;
+}
+
 .about-content {
     display: flex;
     gap: 167px;
@@ -1368,6 +1501,19 @@ main {
         max-width: 100%;
     }
 
+    .experience-section {
+        padding: 60px 0;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .experience-period {
+        min-width: auto;
+    }
+
     .fun-facts-content {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -1821,7 +1967,8 @@ main {
     /* About page specific */
     .about-section,
     .skills-section,
-    .fun-facts-section {
+    .fun-facts-section,
+    .experience-section {
         padding: 32px 0 60px;
     }
 
@@ -1853,6 +2000,41 @@ main {
     .dots-decoration {
         width: 60px;
         height: 60px;
+    }
+
+    .experience-timeline {
+        gap: 32px;
+    }
+
+    .experience-details {
+        padding: 16px;
+    }
+
+    .company-info {
+        gap: 12px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .company-name {
+        font-size: 14px;
+    }
+
+    .job-type,
+    .duration {
+        font-size: 12px;
+    }
+
+    .skill-tag {
+        font-size: 10px;
+        padding: 2px 6px;
     }
 }
 
