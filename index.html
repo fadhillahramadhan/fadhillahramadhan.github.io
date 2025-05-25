@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadhillah - Fullstack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
+                    </div>
+                    <span class="logo-text">Fadhillah</span>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active"><span class="hash">#</span>home</a>
+                    <a href="projects.html" class="nav-link"><span class="hash">#</span>works</a>
+                    <a href="about.html" class="nav-link"><span class="hash">#</span>about-me</a>
+                    <a href="index.html#contacts" class="nav-link"><span class="hash">#</span>contacts</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Fadhillah is a <span class="highlight">fullstack developer</span> who loves <span class="highlight">backend development</span></h1>
+                        <p class="hero-subtitle">He specializes in server-side development with PHP, Python, and JavaScript, building robust APIs, databases, and scalable backend systems</p>
+                        <a href="#contacts" class="btn btn-primary">Contact me!!</a>
+                        <div class="status-card">
+                            <div class="status-indicator"></div>
+                            <span>Currently working on API development</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="assets/images/hero-profile.png" alt="Fadhillah Profile" class="profile-image">
+                            <div class="logo-overlay">
+                                <div class="logo-grid-large">
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                    <div class="logo-square-large"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-decoration dots-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-dots">
+                <div class="dots-pattern dots-bg-1"></div>
+                <div class="dots-pattern dots-bg-2"></div>
+                <div class="dots-pattern dots-bg-3"></div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-card">
+                    <div class="quote-mark quote-start">"</div>
+                    <blockquote class="quote-text">With great power comes great electricity bill</blockquote>
+                    <div class="quote-mark quote-end">"</div>
+                    <cite class="quote-author">- Dr. Who</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="works" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="hash">#</span>projects</h2>
+                    <div class="section-line"></div>
+                    <a href="projects.html" class="view-all">View all ~~></a>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-chertnodes.png" alt="ChertNodes Project">
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ChertNodes</h3>
+                            <p class="project-description">Minecraft servers hosting</p>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary">Live &lt;~&gt;</button>
+                                <button class="btn btn-secondary">Cached &gt;=</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-protectx.png" alt="ProtectX Project">
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Discord.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ProtectX</h3>
+                            <p class="project-description">Discord anti-crash bot</p>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary">Live &lt;~&gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-kahoot.png" alt="Kahoot Answers Viewer">
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Kahoot Answers Viewer</h3>
+                            <p class="project-description">Get answers to your kahoot quiz</p>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary">Live &lt;~&gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="hash">#</span>skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-block">
+                            <h3 class="skill-category">Languages</h3>
+                            <div class="skill-items">
+                                <div class="skill-row">
+                                    <span class="skill-item">PHP</span>
+                                    <span class="skill-item">JavaScript</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">Python</span>
+                                    <span class="skill-item">TypeScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-block">
+                            <h3 class="skill-category">Databases</h3>
+                            <div class="skill-items">
+                                <div class="skill-row">
+                                    <span class="skill-item">SQLite</span>
+                                    <span class="skill-item">PostgreSQL</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">Mongo</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-block">
+                            <h3 class="skill-category">Frameworks</h3>
+                            <div class="skill-items">
+                                <div class="skill-row">
+                                    <span class="skill-item">Laravel</span>
+                                    <span class="skill-item">React</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">Vue.js</span>
+                                    <span class="skill-item">Node.js</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">Flask</span>
+                                    <span class="skill-item">Express.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-block">
+                            <h3 class="skill-category">Other</h3>
+                            <div class="skill-items">
+                                <div class="skill-row">
+                                    <span class="skill-item">HTML</span>
+                                    <span class="skill-item">CSS</span>
+                                    <span class="skill-item">EJS</span>
+                                    <span class="skill-item">SCSS</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">REST</span>
+                                    <span class="skill-item">Jinja</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-block">
+                            <h3 class="skill-category">DevOps & Tools</h3>
+                            <div class="skill-items">
+                                <div class="skill-row">
+                                    <span class="skill-item">Docker</span>
+                                    <span class="skill-item">AWS</span>
+                                    <span class="skill-item">Linux</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">Git</span>
+                                    <span class="skill-item">CI/CD</span>
+                                    <span class="skill-item">Nginx</span>
+                                </div>
+                                <div class="skill-row">
+                                    <span class="skill-item">VSCode</span>
+                                    <span class="skill-item">Kubernetes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-decoration">
+                        <div class="dots-pattern dots-skills-1"></div>
+                        <div class="dots-pattern dots-skills-2"></div>
+                        <div class="logo-decoration">
+                            <div class="logo-grid-decoration">
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                                <div class="logo-square-decoration"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="hash">#</span>about-me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello, i'm Fadhillah!</p>
+                        <p>I'm a self-taught fullstack developer based in Yogyakarta, Indonesia. I specialize in server-side development using PHP, Python, and JavaScript, creating powerful APIs, database architectures, and backend systems that drive modern web applications.</p>
+                        <p>My expertise lies in building scalable backend solutions, designing efficient databases, and creating robust server-side logic. While I can handle frontend development, my passion is in crafting the engine that powers applications - from API design to database optimization and server architecture.</p>
+                        <a href="about.html" class="btn btn-primary">Read more -></a>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/images/about-image.png" alt="About Fadhillah" class="about-img">
+                        <div class="dots-decoration dots-about-1"></div>
+                        <div class="dots-decoration dots-about-2"></div>
+                        <div class="about-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="hash">#</span>contacts</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>I'm interested in backend development and API projects. Whether you need database design, server-side logic, or scalable backend solutions, don't hesitate to contact me</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>Message me here</h3>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none">
+                                            <path d="M20.317 1.492C18.787 0.808 17.147 0.314 15.437 0.048C15.204 0.448 14.934 0.98 14.747 1.4C12.927 1.16 11.127 1.16 9.347 1.4C9.16 0.98 8.884 0.448 8.65 0.048C6.937 0.314 5.297 0.81 3.767 1.496C0.542 6.068 -0.332 10.518 0.105 14.902C2.145 16.408 4.122 17.316 6.057 17.928C6.537 17.284 6.967 16.596 7.337 15.872C6.647 15.616 5.987 15.304 5.367 14.944C5.537 14.82 5.704 14.692 5.864 14.56C9.654 16.304 13.854 16.304 17.594 14.56C17.757 14.692 17.924 14.82 18.094 14.944C17.471 15.306 16.811 15.618 16.121 15.874C16.491 16.598 16.921 17.286 17.401 17.93C19.339 17.318 21.319 16.41 23.359 14.904C23.859 9.788 22.559 5.382 20.317 1.492ZM7.934 12.252C6.764 12.252 5.804 11.172 5.804 9.836C5.804 8.5 6.744 7.42 7.934 7.42C9.124 7.42 10.084 8.5 10.064 9.836C10.067 11.172 9.124 12.252 7.934 12.252ZM15.524 12.252C14.354 12.252 13.394 11.172 13.394 9.836C13.394 8.5 14.334 7.42 15.524 7.42C16.714 7.42 17.674 8.5 17.654 9.836C17.654 11.172 16.714 12.252 15.524 12.252Z" fill="#ABB2BF"/>
+                                        </svg>
+                                    </div>
+                                    <span>!Fadhillah#3519</span>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <svg width="23" height="17" viewBox="0 0 23 17" fill="none">
+                                            <path d="M20.5 0H2.5C1.4 0 0.51 0.9 0.51 2L0.5 14C0.5 15.1 1.4 16 2.5 16H20.5C21.6 16 22.5 15.1 22.5 14V2C22.5 0.9 21.6 0 20.5 0ZM20.5 4L11.5 9L2.5 4V2L11.5 7L20.5 2V4Z" fill="#ABB2BF"/>
+                                        </svg>
+                                    </div>
+                                    <span>fadhillahramadhan01@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+                <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
+                            </div>
+                            <span class="logo-text">Fadhillah</span>
+                        </div>
+                        <p class="footer-email">fadhillahramadhan01@gmail.com</p>
+                    </div>
+                                            <p class="footer-description">Fullstack developer</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
+                                <path d="M7 0C3.1 0 0 3.1 0 7C0 12.2 7 20 7 20S14 12.2 14 7C14 3.1 10.9 0 7 0ZM7 9.5C5.6 9.5 4.5 8.4 4.5 7S5.6 4.5 7 4.5S9.5 5.6 9.5 7S8.4 9.5 7 9.5Z" fill="#ABB2BF"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none">
+                                <path d="M20.317 1.492C18.787 0.808 17.147 0.314 15.437 0.048C15.204 0.448 14.934 0.98 14.747 1.4C12.927 1.16 11.127 1.16 9.347 1.4C9.16 0.98 8.884 0.448 8.65 0.048C6.937 0.314 5.297 0.81 3.767 1.496C0.542 6.068 -0.332 10.518 0.105 14.902C2.145 16.408 4.122 17.316 6.057 17.928C6.537 17.284 6.967 16.596 7.337 15.872C6.647 15.616 5.987 15.304 5.367 14.944C5.537 14.82 5.704 14.692 5.864 14.56C9.654 16.304 13.854 16.304 17.594 14.56C17.757 14.692 17.924 14.82 18.094 14.944C17.471 15.306 16.811 15.618 16.121 15.874C16.491 16.598 16.921 17.286 17.401 17.93C19.339 17.318 21.319 16.41 23.359 14.904C23.859 9.788 22.559 5.382 20.317 1.492ZM7.934 12.252C6.764 12.252 5.804 11.172 5.804 9.836C5.804 8.5 6.744 7.42 7.934 7.42C9.124 7.42 10.084 8.5 10.064 9.836C10.067 11.172 9.124 12.252 7.934 12.252ZM15.524 12.252C14.354 12.252 13.394 11.172 13.394 9.836C13.394 8.5 14.334 7.42 15.524 7.42C16.714 7.42 17.674 8.5 17.654 9.836C17.654 11.172 16.714 12.252 15.524 12.252Z" fill="#ABB2BF"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copyright">© Copyright 2022. Made by Fadhillah</p>
+        </div>
+    </footer>
+
+    <!-- Sidebar Media -->
+    <div class="sidebar-media">
+        <div class="media-line"></div>
+        <div class="media-icons">
+            <a href="#" class="media-icon">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
+                </svg>
+            </a>
+            <a href="#" class="media-icon">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
+                    <path d="M11.5 0C5.15 0 0 5.15 0 11.5S5.15 23 11.5 23S23 17.85 23 11.5S17.85 0 11.5 0ZM17.25 8.05C17.25 8.05 16.1 8.05 14.95 8.05C14.95 6.9 14.95 5.75 14.95 5.75H12.65V8.05H10.35V5.75H8.05V8.05C6.9 8.05 5.75 8.05 5.75 8.05V10.35H8.05V12.65H5.75V14.95H8.05C8.05 16.1 8.05 17.25 8.05 17.25H10.35V14.95H12.65V17.25H14.95V14.95C16.1 14.95 17.25 14.95 17.25 14.95V12.65H14.95V10.35H17.25V8.05Z" fill="#ABB2BF"/>
+                </svg>
+            </a>
+            <a href="#" class="media-icon">
+                <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
+                    <path d="M7 0C3.1 0 0 3.1 0 7C0 12.2 7 20 7 20S14 12.2 14 7C14 3.1 10.9 0 7 0ZM7 9.5C5.6 9.5 4.5 8.4 4.5 7S5.6 4.5 7 4.5S9.5 5.6 9.5 7S8.4 9.5 7 9.5Z" fill="#ABB2BF"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
