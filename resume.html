@@ -1,356 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadhillah Ramadhan - Resume</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Fadhillah Ramadhan - Professional Resume | Fullstack Developer
+    </title>
+    <meta
+      name="title"
+      content="Fadhillah Ramadhan - Professional Resume | Fullstack Developer"
+    />
+    <meta
+      name="description"
+      content="Professional resume of Fadhillah Ramadhan, a fullstack developer specializing in backend development, API development, PHP, Python, and JavaScript. Download CV and view work experience."
+    />
+    <meta
+      name="keywords"
+      content="Fadhillah Ramadhan resume, CV, fullstack developer resume, PHP developer CV, Python developer resume, backend developer CV, API developer resume, software engineer resume"
+    />
+    <meta name="author" content="Fadhillah Ramadhan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fadhillah.dev/resume.html" />
+    <meta
+      property="og:title"
+      content="Fadhillah Ramadhan - Professional Resume | Fullstack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Professional resume of Fadhillah Ramadhan, a fullstack developer specializing in backend development, API development, PHP, Python, and JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://fadhillah.dev/assets/images/hero-profile.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Fadhillah Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fadhillah.dev/resume.html" />
+    <meta
+      property="twitter:title"
+      content="Fadhillah Ramadhan - Professional Resume | Fullstack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Professional resume of Fadhillah Ramadhan, a fullstack developer specializing in backend development, API development, PHP, Python, and JavaScript."
+    />
+    <meta
+      property="twitter:image"
+      content="https://fadhillah.dev/assets/images/hero-profile.png"
+    />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#282C33" />
+    <meta name="msapplication-TileColor" content="#282C33" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fadhillah Resume" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fadhillah.dev/resume.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/svg/Logo.svg" />
+    <link rel="apple-touch-icon" href="assets/svg/Logo.svg" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fadhillah Ramadhan",
+        "jobTitle": "Fullstack Developer",
+        "description": "Professional fullstack developer specializing in backend development, API development, and server-side technologies",
+        "url": "https://fadhillah.dev/resume.html",
+        "image": "https://fadhillah.dev/assets/images/hero-profile.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Yogyakarta",
+          "addressCountry": "Indonesia"
+        },
+        "knowsAbout": [
+          "Fullstack Development",
+          "Backend Development",
+          "API Development",
+          "PHP",
+          "Python",
+          "JavaScript",
+          "Database Development",
+          "Server-side Development",
+          "Web Development"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Fullstack Developer",
+          "description": "Develops complete web solutions with focus on backend and API development"
+        },
+        "sameAs": ["https://github.com/fadhillahramadhan"]
+      }
+    </script>
+
+    <!-- Google Analytics (if you have it) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.4;
+        color: #333;
+        background: white;
+        font-size: 11pt;
+      }
+
+      .resume-container {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in;
+        background: white;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #333;
+        padding-bottom: 15px;
+      }
+
+      .name {
+        font-size: 24pt;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-size: 14pt;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .contact-info {
+        font-size: 10pt;
+        line-height: 1.3;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid #333;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 12pt;
+      }
+
+      .company {
+        font-weight: bold;
+        color: #444;
+      }
+
+      .date-location {
+        font-style: italic;
+        color: #666;
+        font-size: 10pt;
+      }
+
+      .description {
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+
+      .description li {
+        margin-bottom: 3px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .skill-category {
+        margin-bottom: 10px;
+      }
+
+      .skill-category h4 {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .skill-list {
+        font-size: 10pt;
+        line-height: 1.3;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .project-item {
+        margin-bottom: 10px;
+      }
+
+      .project-title {
+        font-weight: bold;
+        font-size: 11pt;
+      }
+
+      .project-tech {
+        font-size: 9pt;
+        color: #666;
+        font-style: italic;
+      }
+
+      .project-desc {
+        font-size: 10pt;
+        margin-top: 3px;
+      }
+
+      @media print {
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.4;
-            color: #333;
-            background: white;
-            font-size: 11pt;
+          font-size: 10pt;
         }
-
         .resume-container {
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0.5in;
-            background: white;
+          padding: 0.3in;
         }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 15px;
-        }
-
-        .name {
-            font-size: 24pt;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .title {
-            font-size: 14pt;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            font-size: 10pt;
-            line-height: 1.3;
-        }
-
         .section {
-            margin-bottom: 20px;
+          margin-bottom: 15px;
         }
-
-        .section-title {
-            font-size: 14pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1px solid #333;
-            margin-bottom: 10px;
-            padding-bottom: 3px;
-        }
-
-        .experience-item, .education-item {
-            margin-bottom: 15px;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 12pt;
-        }
-
-        .company {
-            font-weight: bold;
-            color: #444;
-        }
-
-        .date-location {
-            font-style: italic;
-            color: #666;
-            font-size: 10pt;
-        }
-
-        .description {
-            margin-top: 5px;
-            margin-left: 15px;
-        }
-
-        .description li {
-            margin-bottom: 3px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .skill-category {
-            margin-bottom: 10px;
-        }
-
-        .skill-category h4 {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .skill-list {
-            font-size: 10pt;
-            line-height: 1.3;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .project-item {
-            margin-bottom: 10px;
-        }
-
-        .project-title {
-            font-weight: bold;
-            font-size: 11pt;
-        }
-
-        .project-tech {
-            font-size: 9pt;
-            color: #666;
-            font-style: italic;
-        }
-
-        .project-desc {
-            font-size: 10pt;
-            margin-top: 3px;
-        }
-
-        @media print {
-            body {
-                font-size: 10pt;
-            }
-            .resume-container {
-                padding: 0.3in;
-            }
-            .section {
-                margin-bottom: 15px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="resume-container">
-        <!-- Header -->
-        <div class="header">
-            <div class="name">FADHILLAH RAMADHAN</div>
-            <div class="title">Fullstack Developer</div>
-            <div class="contact-info">
-                Email: fadhillahramadhan01@gmail.com | GitHub: github.com/fadhillahramadhan<br>
-                Location: Yogyakarta, Indonesia
+      <!-- Header -->
+      <div class="header">
+        <div class="name">FADHILLAH RAMADHAN</div>
+        <div class="title">Fullstack Developer</div>
+        <div class="contact-info">
+          Email: fadhillahramadhan01@gmail.com | GitHub:
+          github.com/fadhillahramadhan<br />
+          Location: Yogyakarta, Indonesia
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>
+          Self-taught Fullstack Developer with 5+ years of experience
+          specializing in server-side development using PHP, JavaScript, and
+          modern frameworks. Proven track record of building scalable backend
+          solutions, API development, and database architecture across diverse
+          industries including fintech, e-commerce, and social platforms.
+        </p>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Backend Development</h4>
+            <div class="skill-list">
+              PHP, CodeIgniter, Laravel, Node.js, Express.js
             </div>
+          </div>
+          <div class="skill-category">
+            <h4>Frontend Development</h4>
+            <div class="skill-list">
+              Vue.js, React, JavaScript, TypeScript, HTML5, CSS3
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Database & Infrastructure</h4>
+            <div class="skill-list">
+              MySQL, PostgreSQL, Redis, WebRTC, API Integration
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Specializations</h4>
+            <div class="skill-list">
+              E-commerce, MLM Systems, Fintech, POS Systems, Web Scraping
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="experience-item">
+          <div class="job-title">Senior Programmer</div>
+          <div class="company">PT Esoftdream Solusi Bisnis</div>
+          <div class="date-location">
+            March 2023 - Present | Yogyakarta, Indonesia
+          </div>
+          <ul class="description">
+            <li>
+              Developed and maintained 10+ enterprise applications using PHP,
+              CodeIgniter, and Vue.js
+            </li>
+            <li>
+              Built comprehensive business platforms including MJA Global and
+              Swarna One fintech solutions
+            </li>
+            <li>
+              Created automated systems including WA One web scraper for
+              WhatsApp API integration
+            </li>
+            <li>
+              Implemented MLM systems, e-commerce platforms, and booking
+              management systems
+            </li>
+            <li>
+              Technologies: PHP, CodeIgniter, Vue.js, MySQL, JavaScript, API
+              Development
+            </li>
+          </ul>
         </div>
 
-        <!-- Professional Summary -->
-        <div class="section">
-            <div class="section-title">Professional Summary</div>
-            <p>Self-taught Fullstack Developer with 5+ years of experience specializing in server-side development using PHP, JavaScript, and modern frameworks. Proven track record of building scalable backend solutions, API development, and database architecture across diverse industries including fintech, e-commerce, and social platforms.</p>
+        <div class="experience-item">
+          <div class="job-title">Back End Developer</div>
+          <div class="company">PT Nearven Inovasi Digital</div>
+          <div class="date-location">
+            September 2022 - February 2023 | Yogyakarta, Indonesia
+          </div>
+          <ul class="description">
+            <li>
+              Developed social commerce platform Biartau with integrated
+              communication features
+            </li>
+            <li>
+              Built community-driven social media platform Comun for user
+              engagement
+            </li>
+            <li>
+              Implemented SafeLink secure URL shortening service with advanced
+              security features
+            </li>
+            <li>Utilized modern tech stack for scalable backend solutions</li>
+            <li>
+              Technologies: Node.js, Laravel, PostgreSQL, WebRTC, React,
+              TypeScript
+            </li>
+          </ul>
         </div>
 
-        <!-- Technical Skills -->
-        <div class="section">
-            <div class="section-title">Technical Skills</div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Backend Development</h4>
-                    <div class="skill-list">PHP, CodeIgniter, Laravel, Node.js, Express.js</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Frontend Development</h4>
-                    <div class="skill-list">Vue.js, React, JavaScript, TypeScript, HTML5, CSS3</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Database & Infrastructure</h4>
-                    <div class="skill-list">MySQL, PostgreSQL, Redis, WebRTC, API Integration</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Specializations</h4>
-                    <div class="skill-list">E-commerce, MLM Systems, Fintech, POS Systems, Web Scraping</div>
-                </div>
-            </div>
+        <div class="experience-item">
+          <div class="job-title">Back End Developer</div>
+          <div class="company">PT Netindo Solution Group</div>
+          <div class="date-location">
+            February 2020 - August 2022 | Yogyakarta, Indonesia
+          </div>
+          <ul class="description">
+            <li>
+              Developed integration systems for Accurate accounting software
+            </li>
+            <li>
+              Built comprehensive SODA Point of Sale system with inventory
+              management
+            </li>
+            <li>Implemented API integrations and database optimization</li>
+            <li>Created backend solutions for retail business operations</li>
+            <li>
+              Technologies: PHP, CodeIgniter, Vue.js, MySQL, API Integration
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Professional Experience -->
-        <div class="section">
-            <div class="section-title">Professional Experience</div>
-            
-            <div class="experience-item">
-                <div class="job-title">Senior Programmer</div>
-                <div class="company">PT Esoftdream Solusi Bisnis</div>
-                <div class="date-location">March 2023 - Present | Yogyakarta, Indonesia</div>
-                <ul class="description">
-                    <li>Developed and maintained 10+ enterprise applications using PHP, CodeIgniter, and Vue.js</li>
-                    <li>Built comprehensive business platforms including MJA Global and Swarna One fintech solutions</li>
-                    <li>Created automated systems including WA One web scraper for WhatsApp API integration</li>
-                    <li>Implemented MLM systems, e-commerce platforms, and booking management systems</li>
-                    <li>Technologies: PHP, CodeIgniter, Vue.js, MySQL, JavaScript, API Development</li>
-                </ul>
+      <!-- Key Projects -->
+      <div class="section">
+        <div class="section-title">Key Projects</div>
+        <div class="projects-grid">
+          <div class="project-item">
+            <div class="project-title">MJA Global</div>
+            <div class="project-tech">PHP, Vue.js, CodeIgniter, MySQL</div>
+            <div class="project-desc">
+              Comprehensive business platform for global trading and commerce
+              management
             </div>
-
-            <div class="experience-item">
-                <div class="job-title">Back End Developer</div>
-                <div class="company">PT Nearven Inovasi Digital</div>
-                <div class="date-location">September 2022 - February 2023 | Yogyakarta, Indonesia</div>
-                <ul class="description">
-                    <li>Developed social commerce platform Biartau with integrated communication features</li>
-                    <li>Built community-driven social media platform Comun for user engagement</li>
-                    <li>Implemented SafeLink secure URL shortening service with advanced security features</li>
-                    <li>Utilized modern tech stack for scalable backend solutions</li>
-                    <li>Technologies: Node.js, Laravel, PostgreSQL, WebRTC, React, TypeScript</li>
-                </ul>
+          </div>
+          <div class="project-item">
+            <div class="project-title">Biartau</div>
+            <div class="project-tech">React, Node.js, Laravel, PostgreSQL</div>
+            <div class="project-desc">
+              Social commerce platform connecting sellers and buyers
             </div>
-
-            <div class="experience-item">
-                <div class="job-title">Back End Developer</div>
-                <div class="company">PT Netindo Solution Group</div>
-                <div class="date-location">February 2020 - August 2022 | Yogyakarta, Indonesia</div>
-                <ul class="description">
-                    <li>Developed integration systems for Accurate accounting software</li>
-                    <li>Built comprehensive SODA Point of Sale system with inventory management</li>
-                    <li>Implemented API integrations and database optimization</li>
-                    <li>Created backend solutions for retail business operations</li>
-                    <li>Technologies: PHP, CodeIgniter, Vue.js, MySQL, API Integration</li>
-                </ul>
+          </div>
+          <div class="project-item">
+            <div class="project-title">Swarna One</div>
+            <div class="project-tech">PHP, Vue.js, CodeIgniter, MySQL</div>
+            <div class="project-desc">
+              Financial technology platform for investment and wealth management
             </div>
+          </div>
+          <div class="project-item">
+            <div class="project-title">SafeLink</div>
+            <div class="project-tech">Node.js, Laravel, PostgreSQL</div>
+            <div class="project-desc">
+              Secure URL shortening service with advanced security features
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-title">SODA Point of Sale</div>
+            <div class="project-tech">PHP, CodeIgniter, Vue.js, MySQL</div>
+            <div class="project-desc">
+              Comprehensive POS system for retail businesses
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-title">WA One</div>
+            <div class="project-tech">Node.js, CodeIgniter, PHP</div>
+            <div class="project-desc">
+              Automated web scraper for WhatsApp API integration
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Key Projects -->
-        <div class="section">
-            <div class="section-title">Key Projects</div>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <div class="project-title">MJA Global</div>
-                    <div class="project-tech">PHP, Vue.js, CodeIgniter, MySQL</div>
-                    <div class="project-desc">Comprehensive business platform for global trading and commerce management</div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title">Biartau</div>
-                    <div class="project-tech">React, Node.js, Laravel, PostgreSQL</div>
-                    <div class="project-desc">Social commerce platform connecting sellers and buyers</div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title">Swarna One</div>
-                    <div class="project-tech">PHP, Vue.js, CodeIgniter, MySQL</div>
-                    <div class="project-desc">Financial technology platform for investment and wealth management</div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title">SafeLink</div>
-                    <div class="project-tech">Node.js, Laravel, PostgreSQL</div>
-                    <div class="project-desc">Secure URL shortening service with advanced security features</div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title">SODA Point of Sale</div>
-                    <div class="project-tech">PHP, CodeIgniter, Vue.js, MySQL</div>
-                    <div class="project-desc">Comprehensive POS system for retail businesses</div>
-                </div>
-                <div class="project-item">
-                    <div class="project-title">WA One</div>
-                    <div class="project-tech">Node.js, CodeIgniter, PHP</div>
-                    <div class="project-desc">Automated web scraper for WhatsApp API integration</div>
-                </div>
-            </div>
+      <!-- Education -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+          <div class="job-title">
+            Bachelor of Engineering - Informatics Engineering
+          </div>
+          <div class="company">Universitas Teknologi Digital Indonesia</div>
+          <div class="date-location">2019 - 2023 | Yogyakarta, Indonesia</div>
+          <div class="description">
+            <p>GPA: 3.5/4.0</p>
+            <p>
+              Relevant Coursework: Database Systems, Web Development, Software
+              Engineering, Data Structures
+            </p>
+          </div>
         </div>
-
-        <!-- Education -->
-        <div class="section">
-            <div class="section-title">Education</div>
-            <div class="education-item">
-                <div class="job-title">Bachelor of Engineering - Informatics Engineering</div>
-                <div class="company">Universitas Teknologi Digital Indonesia</div>
-                <div class="date-location">2019 - 2023 | Yogyakarta, Indonesia</div>
-                <div class="description">
-                    <p>GPA: 3.5/4.0</p>
-                    <p>Relevant Coursework: Database Systems, Web Development, Software Engineering, Data Structures</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <!-- Print/Download Controls -->
-    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; display: none;" id="download-controls">
-        <button onclick="downloadResume()" style="background: #C778DD; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px; font-size: 14px;">Download PDF</button>
-        <button onclick="window.close()" style="background: #ABB2BF; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">Close</button>
+    <div
+      style="
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: none;
+      "
+      id="download-controls"
+    >
+      <button
+        onclick="downloadResume()"
+        style="
+          background: #c778dd;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-right: 10px;
+          font-size: 14px;
+        "
+      >
+        Download PDF
+      </button>
+      <button
+        onclick="window.close()"
+        style="
+          background: #abb2bf;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+        "
+      >
+        Close
+      </button>
     </div>
 
     <!-- Mobile-friendly download instructions -->
-    <div id="mobile-instructions" style="display: none; position: fixed; top: 0; left: 0; right: 0; background: #C778DD; color: white; padding: 15px; text-align: center; z-index: 1001; font-size: 14px;">
-        <strong>Mobile Download:</strong> Tap the share button in your browser and select "Save as PDF" or "Print to PDF"
-        <button onclick="closeMobileInstructions()" style="background: transparent; border: 1px solid white; color: white; padding: 5px 10px; margin-left: 10px; border-radius: 3px; cursor: pointer;">Got it</button>
+    <div
+      id="mobile-instructions"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #c778dd;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        z-index: 1001;
+        font-size: 14px;
+      "
+    >
+      <strong>Mobile Download:</strong> Tap the share button in your browser and
+      select "Save as PDF" or "Print to PDF"
+      <button
+        onclick="closeMobileInstructions()"
+        style="
+          background: transparent;
+          border: 1px solid white;
+          color: white;
+          padding: 5px 10px;
+          margin-left: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+        "
+      >
+        Got it
+      </button>
     </div>
 
     <script>
-        // Detect if user is on mobile
-        function isMobileDevice() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
-                   (window.innerWidth <= 768);
+      // Detect if user is on mobile
+      function isMobileDevice() {
+        return (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          ) || window.innerWidth <= 768
+        );
+      }
+
+      // Download function with mobile support
+      function downloadResume() {
+        if (isMobileDevice()) {
+          // Show mobile instructions
+          document.getElementById("mobile-instructions").style.display =
+            "block";
+          // Also try to trigger print dialog
+          setTimeout(() => {
+            window.print();
+          }, 500);
+        } else {
+          // Desktop: use print dialog
+          window.print();
         }
+      }
 
-        // Download function with mobile support
-        function downloadResume() {
-            if (isMobileDevice()) {
-                // Show mobile instructions
-                document.getElementById('mobile-instructions').style.display = 'block';
-                // Also try to trigger print dialog
-                setTimeout(() => {
-                    window.print();
-                }, 500);
-            } else {
-                // Desktop: use print dialog
-                window.print();
-            }
+      // Close mobile instructions
+      function closeMobileInstructions() {
+        document.getElementById("mobile-instructions").style.display = "none";
+      }
+
+      // Show download controls when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("download-controls").style.display = "block";
+
+        // Adjust button text for mobile
+        if (isMobileDevice()) {
+          document.querySelector("#download-controls button").innerHTML =
+            "Save as PDF";
         }
+      });
 
-        // Close mobile instructions
-        function closeMobileInstructions() {
-            document.getElementById('mobile-instructions').style.display = 'none';
-        }
+      // Hide controls when printing
+      window.addEventListener("beforeprint", function () {
+        document.getElementById("download-controls").style.display = "none";
+        document.getElementById("mobile-instructions").style.display = "none";
+      });
 
-        // Show download controls when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('download-controls').style.display = 'block';
-            
-            // Adjust button text for mobile
-            if (isMobileDevice()) {
-                document.querySelector('#download-controls button').innerHTML = 'Save as PDF';
-            }
-        });
+      // Show controls after printing
+      window.addEventListener("afterprint", function () {
+        document.getElementById("download-controls").style.display = "block";
+      });
 
-        // Hide controls when printing
-        window.addEventListener('beforeprint', function() {
-            document.getElementById('download-controls').style.display = 'none';
-            document.getElementById('mobile-instructions').style.display = 'none';
-        });
-
-        // Show controls after printing
-        window.addEventListener('afterprint', function() {
-            document.getElementById('download-controls').style.display = 'block';
-        });
-
-        // Add CSS for better mobile experience
-        const style = document.createElement('style');
-        style.textContent = `
+      // Add CSS for better mobile experience
+      const style = document.createElement("style");
+      style.textContent = `
             @media (max-width: 768px) {
                 #download-controls {
                     position: fixed !important;
@@ -375,7 +647,7 @@
                 }
             }
         `;
-        document.head.appendChild(style);
+      document.head.appendChild(style);
     </script>
-</body>
-</html> 
+  </body>
+</html>

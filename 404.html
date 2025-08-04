@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>404 - Page Not Found | Fadhillah Portfolio</title>
+    <meta name="title" content="404 - Page Not Found | Fadhillah Portfolio" />
+    <meta
+      name="description"
+      content="The page you're looking for doesn't exist. Return to Fadhillah's portfolio homepage."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fadhillah.dev/404.html" />
+    <meta
+      property="og:title"
+      content="404 - Page Not Found | Fadhillah Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="The page you're looking for doesn't exist. Return to Fadhillah's portfolio homepage."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://fadhillah.dev/404.html" />
+    <meta
+      property="twitter:title"
+      content="404 - Page Not Found | Fadhillah Portfolio"
+    />
+    <meta
+      property="twitter:description"
+      content="The page you're looking for doesn't exist. Return to Fadhillah's portfolio homepage."
+    />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#282C33" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fadhillah.dev/404.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/svg/Logo.svg" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .error-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .error-content {
+        max-width: 600px;
+      }
+
+      .error-code {
+        font-size: 8rem;
+        font-weight: 700;
+        color: #c778dd;
+        margin-bottom: 20px;
+        line-height: 1;
+      }
+
+      .error-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .error-description {
+        font-size: 1.1rem;
+        color: #abb2bf;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .error-actions {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-error {
+        padding: 12px 24px;
+        background: #c778dd;
+        color: #282c33;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-error:hover {
+        background: #b366c7;
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary {
+        padding: 12px 24px;
+        background: transparent;
+        color: #abb2bf;
+        text-decoration: none;
+        border: 1px solid #3c3c3c;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-secondary:hover {
+        border-color: #c778dd;
+        color: #c778dd;
+      }
+
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 6rem;
+        }
+
+        .error-title {
+          font-size: 1.5rem;
+        }
+
+        .error-description {
+          font-size: 1rem;
+        }
+
+        .error-actions {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg" />
+            </div>
+            <span class="logo-text">Fadhillah</span>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link"
+              ><span class="hash">#</span>home</a
+            >
+            <a href="projects.html" class="nav-link"
+              ><span class="hash">#</span>projects</a
+            >
+            <a href="about.html" class="nav-link"
+              ><span class="hash">#</span>about-me</a
+            >
+            <a href="index.html#contacts" class="nav-link"
+              ><span class="hash">#</span>contacts</a
+            >
+            <a href="resume.html" target="_blank" class="nav-link"
+              ><span class="hash">#</span>resume</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 404 Error Content -->
+    <main class="error-container">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-description">
+          Oops! The page you're looking for doesn't exist. It might have been
+          moved, deleted, or you entered the wrong URL.
+        </p>
+        <div class="error-actions">
+          <a href="index.html" class="btn-error">Go Home</a>
+          <a href="projects.html" class="btn-secondary">View Projects</a>
+          <a href="about.html" class="btn-secondary">About Me</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Background Decorations -->
+    <div class="background-decorations">
+      <div class="dots-pattern dots-1"></div>
+      <div class="dots-pattern dots-2"></div>
+      <div class="dots-pattern dots-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

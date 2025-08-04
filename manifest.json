@@ -1,0 +1,86 @@
+{
+  "name": "Fadhillah - Fullstack Developer Portfolio",
+  "short_name": "Fadhillah",
+  "description": "Professional portfolio of Fadhillah, a fullstack developer specializing in backend development, API development, and server-side technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#282C33",
+  "theme_color": "#282C33",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "assets/svg/Logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/hero-profile.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/hero-profile.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/hero-profile.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "assets/images/hero-profile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View my professional projects",
+      "url": "/projects.html",
+      "icons": [
+        {
+          "src": "assets/svg/Logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn more about me",
+      "url": "/about.html",
+      "icons": [
+        {
+          "src": "assets/svg/Logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Resume",
+      "short_name": "Resume",
+      "description": "Download my resume",
+      "url": "/resume.html",
+      "icons": [
+        {
+          "src": "assets/svg/Logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

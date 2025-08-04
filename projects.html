@@ -1,546 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadhillah - Projects</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Fadhillah - Projects Portfolio | Personal, Company & GitHub Projects
+    </title>
+    <meta
+      name="title"
+      content="Fadhillah - Projects Portfolio | Personal, Company & GitHub Projects"
+    />
+    <meta
+      name="description"
+      content="Explore Fadhillah's professional projects including personal projects, company work, and GitHub repositories. View projects in PHP, Python, JavaScript, API development, and fullstack development."
+    />
+    <meta
+      name="keywords"
+      content="Fadhillah projects, portfolio projects, PHP projects, Python projects, JavaScript projects, API development projects, fullstack projects, web development projects, backend projects, GitHub repositories"
+    />
+    <meta name="author" content="Fadhillah" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fadhillah.dev/projects.html" />
+    <meta
+      property="og:title"
+      content="Fadhillah - Projects Portfolio | Personal, Company & GitHub Projects"
+    />
+    <meta
+      property="og:description"
+      content="Explore Fadhillah's professional projects including personal projects, company work, and GitHub repositories."
+    />
+    <meta
+      property="og:image"
+      content="https://fadhillah.dev/assets/images/hero-profile.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Fadhillah Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://fadhillah.dev/projects.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Fadhillah - Projects Portfolio | Personal, Company & GitHub Projects"
+    />
+    <meta
+      property="twitter:description"
+      content="Explore Fadhillah's professional projects including personal projects, company work, and GitHub repositories."
+    />
+    <meta
+      property="twitter:image"
+      content="https://fadhillah.dev/assets/images/hero-profile.png"
+    />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#282C33" />
+    <meta name="msapplication-TileColor" content="#282C33" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fadhillah Projects" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fadhillah.dev/projects.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/svg/Logo.svg" />
+    <link rel="apple-touch-icon" href="assets/svg/Logo.svg" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Fadhillah Projects Portfolio",
+        "description": "Professional projects portfolio including personal projects, company work, and GitHub repositories",
+        "url": "https://fadhillah.dev/projects.html",
+        "image": "https://fadhillah.dev/assets/images/hero-profile.png",
+        "author": {
+          "@type": "Person",
+          "name": "Fadhillah",
+          "jobTitle": "Fullstack Developer"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "throwfile.click",
+              "description": "Personal file sharing project",
+              "applicationCategory": "Web Application",
+              "operatingSystem": "Web Browser"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "HttpApi",
+              "description": "HTTP API development project",
+              "applicationCategory": "API",
+              "operatingSystem": "Web Browser"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "CodeIgniter4 Vue.js Boilerplate",
+              "description": "Fullstack development boilerplate",
+              "applicationCategory": "Web Application",
+              "operatingSystem": "Web Browser"
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Google Analytics (if you have it) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
-                    </div>
-                    <span class="logo-text">Fadhillah</span>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav">
-                    <a href="index.html" class="nav-link"><span class="hash">#</span>home</a>
-                    <a href="projects.html" class="nav-link active"><span class="hash">#</span>projects</a>
-                    <a href="about.html" class="nav-link"><span class="hash">#</span>about-me</a>
-                    <a href="index.html#contacts" class="nav-link"><span class="hash">#</span>contacts</a>
-                    <a href="resume.html" target="_blank" class="nav-link"><span class="hash">#</span>resume</a>
-                </nav>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg" />
             </div>
+            <span class="logo-text">Fadhillah</span>
+          </div>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link"
+              ><span class="hash">#</span>home</a
+            >
+            <a href="projects.html" class="nav-link active"
+              ><span class="hash">#</span>projects</a
+            >
+            <a href="about.html" class="nav-link"
+              ><span class="hash">#</span>about-me</a
+            >
+            <a href="index.html#contacts" class="nav-link"
+              ><span class="hash">#</span>contacts</a
+            >
+            <a href="resume.html" target="_blank" class="nav-link"
+              ><span class="hash">#</span>resume</a
+            >
+          </nav>
         </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Page Title -->
-        <section class="projects-page-title">
-            <div class="container">
-                <div class="page-title">
-                    <h1 class="page-title-main">
-                        <span class="slash">/</span><span class="title-text">projects</span>
-                    </h1>
-                    <p class="page-subtitle">Professional projects from my career experience</p>
-                </div>
-            </div>
-        </section>
+      <!-- Page Title -->
+      <section class="projects-page-title">
+        <div class="container">
+          <div class="page-title">
+            <h1 class="page-title-main">
+              <span class="slash">/</span
+              ><span class="title-text">projects</span>
+            </h1>
+            <p class="page-subtitle">
+              Professional projects from my career experience
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- PT Esoftdream Projects -->
-        <section class="company-projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="hash">#</span>PT Esoftdream Solusi Bisnis</h2>
-                    <div class="section-line"></div>
-                    <p class="company-period">Mar 2023 - Present | Senior Programmer</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-mjaglobal.webp" alt="MJA Global Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">MJA Global</h3>
-                            <p class="project-description">Comprehensive business platform for global trading and commerce management</p>
-                            <div class="project-buttons">
-                                <a href="https://mjaglobal.net/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-dsn-world.webp" alt="DSN World Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Business Platform</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">DSN World</h3>
-                            <p class="project-description">Digital platform for business networking and professional services</p>
-                            <div class="project-buttons">
-                                <a href="https://dsn-world.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-swarna-one.webp" alt="Swarna One Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Fintech</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Swarna One</h3>
-                            <p class="project-description">Financial technology platform for investment and wealth management solutions</p>
-                            <div class="project-buttons">
-                                <a href="https://swarna.one/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-kimstella.webp" alt="Kim Stella Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Payment Gateway</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Kim Stella</h3>
-                            <p class="project-description">Beauty and health e-commerce platform with MLM business model and BPOM certified products</p>
-                            <div class="project-buttons">
-                                <a href="https://www.kimstella.co.id/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-desintku.webp" alt="Desintku Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Interior Design</span>
-                            <span class="tag">Portfolio System</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Desintku</h3>
-                            <p class="project-description">Interior design platform connecting clients with professional designers and showcasing portfolios</p>
-                            <div class="project-buttons">
-                                <a href="https://desintku.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-fabizer.webp" alt="Fabizer Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">MLM System</span>
-                            <span class="tag">Business Management</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fabizer</h3>
-                            <p class="project-description">Islamic-themed business platform with MLM structure for beauty and skincare products</p>
-                            <div class="project-buttons">
-                                <a href="https://fabizer.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-bokashi.webp" alt="Bokashi Therapy Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Booking System</span>
-                            <span class="tag">Wellness</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Bokashi Therapy</h3>
-                            <p class="project-description">Wellness therapy booking platform for traditional Indonesian healing treatments</p>
-                            <div class="project-buttons">
-                                <a href="https://bokashitherapy.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-auriti.webp" alt="Auriti Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Beauty Products</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Auriti</h3>
-                            <p class="project-description">Body care e-commerce platform with "Live Healthy Aura Beauty" concept and MLM business model</p>
-                            <div class="project-buttons">
-                                <a href="https://auriti.co.id/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-juarasystem.webp" alt="Juara System Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">System Management</span>
-                            <span class="tag">Dashboard</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Juara System</h3>
-                            <p class="project-description">Comprehensive management system for business operations and performance tracking</p>
-                            <div class="project-buttons">
-                                <a href="https://juarasystem.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-waone.png" alt="WA One Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">Web Scraper</span>
-                            <span class="tag">WhatsApp API</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">WA One</h3>
-                            <p class="project-description">Automated web scraper system using Node.js and CodeIgniter for automatic WhatsApp message sending via API integration</p>
-                            <div class="project-buttons">
-                                <span class="btn btn-secondary">Internal Tool</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Search Section -->
+      <section class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <svg
+                class="search-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.5 17.5L12.5 12.5M14.1667 8.33333C14.1667 11.555 11.555 14.1667 8.33333 14.1667C5.11167 14.1667 2.5 11.555 2.5 8.33333C2.5 5.11167 5.11167 2.5 8.33333 2.5C11.555 2.5 14.1667 5.11167 14.1667 8.33333Z"
+                  stroke="#ABB2BF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input
+                type="text"
+                id="projectSearch"
+                class="search-input"
+                placeholder="Search projects by title, description, or technologies..."
+              />
             </div>
-        </section>
+            <div class="search-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="personal">
+                Personal
+              </button>
+              <button class="filter-btn" data-filter="company">Company</button>
+              <button class="filter-btn" data-filter="github">GitHub</button>
+            </div>
+          </div>
+          <div class="search-results">
+            <span id="resultsCount" class="results-count"
+              >Showing all projects</span
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- PT Nearven Projects -->
-        <section class="company-projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="hash">#</span>PT Nearven Inovasi Digital</h2>
-                    <div class="section-line"></div>
-                    <p class="company-period">Sep 2022 - Feb 2023 | Back End Developer</p>
+      <!-- Personal Projects -->
+      <section class="company-projects" data-category="personal">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>Personal Projects
+            </h2>
+            <div class="section-line"></div>
+            <p class="company-period">Side Projects & Portfolio Work</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-throwfile.png"
+                  alt="Throwfile.click Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">File Upload</span>
+                <span class="tag">Temporary Storage</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Throwfile.click</h3>
+                <p class="project-description">
+                  Instant file upload and temporary file sharing platform with
+                  auto-delete functionality and secure disposable links.
+                  Features drag-and-drop upload, custom expiration times, and
+                  support for files up to 200MB.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://throwfile.click/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-biartau.png" alt="Biartau Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Redis</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Biartau</h3>
-                            <p class="project-description">Social commerce platform connecting sellers and buyers with integrated communication features</p>
-                            <div class="project-buttons">
-                                <a href="https://biartau.id/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-comun.png" alt="Comun Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">WebRTC</span>
-                            <span class="tag">TypeScript</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Comun</h3>
-                            <p class="project-description">Community-driven social media platform for sharing and connecting with like-minded individuals</p>
-                            <div class="project-buttons">
-                                <a href="https://comun.id/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-safelinku.png" alt="SafeLink Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">URL Shortener</span>
-                            <span class="tag">Security</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">SafeLink</h3>
-                            <p class="project-description">Core SafeLink implementation for secure URL shortening and link protection with advanced security features</p>
-                            <div class="project-buttons">
-                                <a href="https://safelinku.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- PT Netindo Projects -->
-        <section class="company-projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="hash">#</span>PT. NETINDO SOLUTION GROUP</h2>
-                    <div class="section-line"></div>
-                    <p class="company-period">Feb 2020 - Aug 2022 | Back End Developer</p>
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-3droom.png"
+                  alt="3D Room Portfolio Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">Three.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">WebGL</span>
+                <span class="tag">CSS3DRenderer</span>
+                <span class="tag">Vite</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">3D Room Portfolio</h3>
+                <p class="project-description">
+                  An interactive 3D room portfolio website built with Three.js
+                  and Vite. Features 3D room visualization, CSS3D interactive
+                  computer screen, YouTube integration, and real web content
+                  embedded in 3D space.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://room3d.voxelize.online/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Demo &lt;~&gt;</a
+                  >
+                  <a
+                    href="https://github.com/fadhillahramadhan/room3d"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub &lt;~&gt;</a
+                  >
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-accurate.webp" alt="Accurate Integration Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">API Integration</span>
-                            <span class="tag">Accounting Software</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Accurate Integration</h3>
-                            <p class="project-description">Integration system for Accurate accounting software, Indonesia's leading cloud-based accounting solution</p>
-                            <div class="project-buttons">
-                                <a href="https://accurate.id/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-sodapos.webp" alt="SODA POS Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">SODA Point of Sale</h3>
-                            <p class="project-description">Comprehensive POS system for retail businesses with inventory management and sales analytics</p>
-                            <div class="project-buttons">
-                                <a href="https://www.sodapos.com/" target="_blank" class="btn btn-primary">Live Site &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Personal Projects -->
-        <section class="company-projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="hash">#</span>Personal Projects</h2>
-                    <div class="section-line"></div>
-                    <p class="company-period">Side Projects & Portfolio Work</p>
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/placeholder-project.png"
+                  alt="Portfolio Website Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Modern Portfolio Website</h3>
+                <p class="project-description">
+                  A modern, responsive portfolio website built from Figma design
+                  with dark theme, interactive animations, and mobile-first
+                  approach. Features smooth scrolling, typing animations, and
+                  accessibility support.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/fadhillahramadhan/portofolio-new"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub &lt;~&gt;</a
+                  >
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-3droom.png" alt="3D Room Portfolio Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Three.js</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">WebGL</span>
-                            <span class="tag">CSS3DRenderer</span>
-                            <span class="tag">Vite</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">3D Room Portfolio</h3>
-                            <p class="project-description">An interactive 3D room portfolio website built with Three.js and Vite. Features 3D room visualization, CSS3D interactive computer screen, YouTube integration, and real web content embedded in 3D space.</p>
-                            <div class="project-buttons">
-                                <a href="https://room3d.voxelize.online/" target="_blank" class="btn btn-primary">Live Demo &lt;~&gt;</a>
-                                <a href="https://github.com/fadhillahramadhan/room3d" target="_blank" class="btn btn-secondary">GitHub &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/placeholder-project.png" alt="Portfolio Website Screenshot" onerror="this.src='assets/images/placeholder-project.png';">
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive Design</span>
-                            <span class="tag">GitHub Pages</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Modern Portfolio Website</h3>
-                            <p class="project-description">A modern, responsive portfolio website built from Figma design with dark theme, interactive animations, and mobile-first approach. Features smooth scrolling, typing animations, and accessibility support.</p>
-                            <div class="project-buttons">
-                                <a href="https://github.com/fadhillahramadhan/portofolio-new" target="_blank" class="btn btn-primary">GitHub &lt;~&gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- GitHub Repositories -->
+      <section class="company-projects" data-category="github">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>GitHub Repositories
+            </h2>
+            <div class="section-line"></div>
+            <p class="company-period">Open Source Projects & Code Examples</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">HTTP Server</span>
+                <span class="tag">Express.js-like</span>
+                <span class="tag">CMake</span>
+                <span class="tag">Multi-threaded</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  HttpApi - Express.js-like C++ HTTP Framework
+                </h3>
+                <p class="project-description">
+                  A modern, high-performance HTTP server framework for C++ that
+                  provides Express.js-like functionality with familiar API.
+                  Features routing, middleware, JSON support, static file
+                  serving, and multi-threaded request handling.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/fadhillahramadhan/httpapi"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
 
-        <!-- Technical Skills Summary -->
-        <section class="tech-summary">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="hash">#</span>technologies-used</h2>
-                    <div class="section-line"></div>
+            <div class="project-card">
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter 4</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Boilerplate</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">CodeIgniter4 Vue.js Boilerplate</h3>
+                <p class="project-description">
+                  A ready-to-use boilerplate project combining CodeIgniter 4
+                  backend with Vue.js frontend. Provides a solid foundation for
+                  building modern web applications with PHP backend and
+                  JavaScript frontend.
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/fadhillahramadhan/codeigniter4-vuejs-boiler"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub &lt;~&gt;</a
+                  >
                 </div>
-                <div class="tech-categories">
-                    <div class="tech-category">
-                        <h3>Backend Development</h3>
-                        <div class="tech-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">CodeIgniter</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express.js</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h3>Frontend Development</h3>
-                        <div class="tech-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h3>Database & Infrastructure</h3>
-                        <div class="tech-tags">
-                            <span class="tag">MySQL</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Redis</span>
-                            <span class="tag">WebRTC</span>
-                            <span class="tag">Sequelize.js</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h3>Business Applications</h3>
-                        <div class="tech-tags">
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">MLM Systems</span>
-                            <span class="tag">Fintech</span>
-                            <span class="tag">POS Systems</span>
-                            <span class="tag">Social Commerce</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- PT Esoftdream Projects -->
+      <section class="company-projects" data-category="company">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>PT Esoftdream Solusi Bisnis
+            </h2>
+            <div class="section-line"></div>
+            <p class="company-period">Mar 2023 - Present | Senior Programmer</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-mjaglobal.webp"
+                  alt="MJA Global Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">MJA Global</h3>
+                <p class="project-description">
+                  Comprehensive business platform for global trading and
+                  commerce management
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://mjaglobal.net/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-dsn-world.webp"
+                  alt="DSN World Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Business Platform</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">DSN World</h3>
+                <p class="project-description">
+                  Digital platform for business networking and professional
+                  services
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://dsn-world.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-swarna-one.webp"
+                  alt="Swarna One Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Fintech</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Swarna One</h3>
+                <p class="project-description">
+                  Financial technology platform for investment and wealth
+                  management solutions
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://swarna.one/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-kimstella.webp"
+                  alt="Kim Stella Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">E-commerce</span>
+                <span class="tag">Payment Gateway</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Kim Stella</h3>
+                <p class="project-description">
+                  Beauty and health e-commerce platform with MLM business model
+                  and BPOM certified products
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.kimstella.co.id/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-desintku.webp"
+                  alt="Desintku Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Interior Design</span>
+                <span class="tag">Portfolio System</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Desintku</h3>
+                <p class="project-description">
+                  Interior design platform connecting clients with professional
+                  designers and showcasing portfolios
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://desintku.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-fabizer.webp"
+                  alt="Fabizer Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MLM System</span>
+                <span class="tag">Business Management</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Fabizer</h3>
+                <p class="project-description">
+                  Islamic-themed business platform with MLM structure for beauty
+                  and skincare products
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://fabizer.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-bokashi.webp"
+                  alt="Bokashi Therapy Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Booking System</span>
+                <span class="tag">Wellness</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Bokashi Therapy</h3>
+                <p class="project-description">
+                  Wellness therapy booking platform for traditional Indonesian
+                  healing treatments
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://bokashitherapy.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-auriti.webp"
+                  alt="Auriti Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">E-commerce</span>
+                <span class="tag">Beauty Products</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Auriti</h3>
+                <p class="project-description">
+                  Body care e-commerce platform with "Live Healthy Aura Beauty"
+                  concept and MLM business model
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://auriti.co.id/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-juarasystem.webp"
+                  alt="Juara System Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">System Management</span>
+                <span class="tag">Dashboard</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Juara System</h3>
+                <p class="project-description">
+                  Comprehensive management system for business operations and
+                  performance tracking
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://juarasystem.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-waone.png"
+                  alt="WA One Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Web Scraper</span>
+                <span class="tag">WhatsApp API</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">WA One</h3>
+                <p class="project-description">
+                  Automated web scraper system using Node.js and CodeIgniter for
+                  automatic WhatsApp message sending via API integration
+                </p>
+                <div class="project-buttons">
+                  <span class="btn btn-secondary">Internal Tool</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PT Nearven Projects -->
+      <section class="company-projects" data-category="company">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>PT Nearven Inovasi Digital
+            </h2>
+            <div class="section-line"></div>
+            <p class="company-period">
+              Sep 2022 - Feb 2023 | Back End Developer
+            </p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-biartau.png"
+                  alt="Biartau Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Redis</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Biartau</h3>
+                <p class="project-description">
+                  Social commerce platform connecting sellers and buyers with
+                  integrated communication features
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://biartau.id/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-comun.png"
+                  alt="Comun Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">WebRTC</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Comun</h3>
+                <p class="project-description">
+                  Community-driven social media platform for sharing and
+                  connecting with like-minded individuals
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://comun.id/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-safelinku.png"
+                  alt="SafeLink Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">URL Shortener</span>
+                <span class="tag">Security</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">SafeLink</h3>
+                <p class="projecb-description">
+                  Core SafeLink implementation for secure URL shortening and
+                  link protection with advanced security features
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://safelinku.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PT Netindo Projects -->
+      <section class="company-projects" data-category="company">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>PT. NETINDO SOLUTION GROUP
+            </h2>
+            <div class="section-line"></div>
+            <p class="company-period">
+              Feb 2020 - Aug 2022 | Back End Developer
+            </p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-accurate.webp"
+                  alt="Accurate Integration Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">API Integration</span>
+                <span class="tag">Accounting Software</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Accurate Integration</h3>
+                <p class="project-description">
+                  Integration system for Accurate accounting software,
+                  Indonesia's leading cloud-based accounting solution
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://accurate.id/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-sodapos.webp"
+                  alt="SODA POS Screenshot"
+                  onerror="this.src='assets/images/placeholder-project.png';"
+                />
+              </div>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">SODA Point of Sale</h3>
+                <p class="project-description">
+                  Comprehensive POS system for retail businesses with inventory
+                  management and sales analytics
+                </p>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.sodapos.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Site &lt;~&gt;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Summary -->
+      <section class="tech-summary">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>technologies-used
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="tech-categories">
+            <div class="tech-category">
+              <h3>Backend Development</h3>
+              <div class="tech-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h3>Frontend Development</h3>
+              <div class="tech-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h3>Database & Infrastructure</h3>
+              <div class="tech-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Redis</span>
+                <span class="tag">WebRTC</span>
+                <span class="tag">Sequelize.js</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h3>Business Applications</h3>
+              <div class="tech-tags">
+                <span class="tag">E-commerce</span>
+                <span class="tag">MLM Systems</span>
+                <span class="tag">Fintech</span>
+                <span class="tag">POS Systems</span>
+                <span class="tag">Social Commerce</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-brand">
-                        <div class="logo">
-                            <div class="logo-icon">
-                                <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
-                            </div>
-                            <span class="logo-text">Fadhillah</span>
-                        </div>
-                        <p class="footer-email">fadhillahramadhan01@gmail.com</p>
-                    </div>
-                    <p class="footer-description">Fullstack developer</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-brand">
+              <div class="logo">
+                <div class="logo-icon">
+                  <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg" />
                 </div>
-                <div class="footer-social">
-                    <h3>Media</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/fadhillahramadhan/" class="social-link">
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <span class="logo-text">Fadhillah</span>
+              </div>
+              <p class="footer-email">fadhillahramadhan01@gmail.com</p>
             </div>
-            <p class="footer-copyright">© Copyright 2022. Made by Fadhillah</p>
+            <p class="footer-description">Fullstack developer</p>
+          </div>
+          <div class="footer-social">
+            <h3>Media</h3>
+            <div class="social-links">
+              <a
+                href="https://github.com/fadhillahramadhan/"
+                class="social-link"
+              >
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+                  <path
+                    d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z"
+                    fill="#ABB2BF"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
+        <p class="footer-copyright">© Copyright 2022. Made by Fadhillah</p>
+      </div>
     </footer>
 
     <!-- Sidebar Media -->
     <div class="sidebar-media">
-        <div class="media-line"></div>
-        <div class="media-icons">
-            <a href="https://github.com/fadhillahramadhan/" class="media-icon">
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
-                    <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
-                </svg>
-            </a>
-        </div>
+      <div class="media-line"></div>
+      <div class="media-icons">
+        <a href="https://github.com/fadhillahramadhan/" class="media-icon">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <path
+              d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z"
+              fill="#ABB2BF"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
 
     <!-- Background Decorations -->
     <div class="background-dots">
-        <div class="dots-pattern dots-bg-1"></div>
-        <div class="dots-pattern dots-bg-2"></div>
+      <div class="dots-pattern dots-bg-1"></div>
+      <div class="dots-pattern dots-bg-2"></div>
     </div>
 
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>

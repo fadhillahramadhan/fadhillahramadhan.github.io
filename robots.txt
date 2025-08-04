@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fadhillah.dev/sitemap.xml
+
+# Crawl-delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Disallow specific directories if needed
+# Disallow: /private/
+# Disallow: /admin/ 

@@ -1,460 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadhillah - About Me</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Fadhillah - About Me | Fullstack Developer from Yogyakarta, Indonesia
+    </title>
+    <meta
+      name="title"
+      content="Fadhillah - About Me | Fullstack Developer from Yogyakarta, Indonesia"
+    />
+    <meta
+      name="description"
+      content="Learn about Fadhillah, a self-taught fullstack developer from Yogyakarta, Indonesia. Specializing in PHP, Python, JavaScript, backend development, API development, and database optimization."
+    />
+    <meta
+      name="keywords"
+      content="Fadhillah about, fullstack developer Indonesia, PHP developer Yogyakarta, Python developer, JavaScript developer, backend developer, API developer, database developer, self-taught developer"
+    />
+    <meta name="author" content="Fadhillah" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fadhillah.dev/about.html" />
+    <meta
+      property="og:title"
+      content="Fadhillah - About Me | Fullstack Developer from Yogyakarta, Indonesia"
+    />
+    <meta
+      property="og:description"
+      content="Learn about Fadhillah, a self-taught fullstack developer from Yogyakarta, Indonesia. Specializing in PHP, Python, JavaScript, backend development, API development, and database optimization."
+    />
+    <meta
+      property="og:image"
+      content="https://fadhillah.dev/assets/images/about-page-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Fadhillah Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fadhillah.dev/about.html" />
+    <meta
+      property="twitter:title"
+      content="Fadhillah - About Me | Fullstack Developer from Yogyakarta, Indonesia"
+    />
+    <meta
+      property="twitter:description"
+      content="Learn about Fadhillah, a self-taught fullstack developer from Yogyakarta, Indonesia. Specializing in PHP, Python, JavaScript, backend development, API development, and database optimization."
+    />
+    <meta
+      property="twitter:image"
+      content="https://fadhillah.dev/assets/images/about-page-image.png"
+    />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#282C33" />
+    <meta name="msapplication-TileColor" content="#282C33" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="About Fadhillah" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fadhillah.dev/about.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/svg/Logo.svg" />
+    <link rel="apple-touch-icon" href="assets/svg/Logo.svg" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fadhillah",
+        "jobTitle": "Fullstack Developer",
+        "description": "Self-taught fullstack developer specializing in backend development, API development, and database optimization",
+        "url": "https://fadhillah.dev/about.html",
+        "image": "https://fadhillah.dev/assets/images/about-page-image.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Yogyakarta",
+          "addressCountry": "Indonesia"
+        },
+        "knowsAbout": [
+          "Fullstack Development",
+          "Backend Development",
+          "API Development",
+          "PHP",
+          "Python",
+          "JavaScript",
+          "Database Optimization",
+          "Server-side Development",
+          "Web Development"
+        ],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Self-taught Developer"
+        },
+        "sameAs": ["https://github.com/fadhillahramadhan"]
+      }
+    </script>
+
+    <!-- Google Analytics (if you have it) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
-                    </div>
-                    <span class="logo-text">Fadhillah</span>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav">
-                    <a href="index.html" class="nav-link"><span class="hash">#</span>home</a>
-                    <a href="projects.html" class="nav-link"><span class="hash">#</span>projects</a>
-                    <a href="about.html" class="nav-link active"><span class="hash">#</span>about-me</a>
-                    <a href="index.html#contacts" class="nav-link"><span class="hash">#</span>contacts</a>
-                    <a href="resume.html" target="_blank" class="nav-link"><span class="hash">#</span>resume</a>
-                </nav>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg" />
             </div>
+            <span class="logo-text">Fadhillah</span>
+          </div>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link"
+              ><span class="hash">#</span>home</a
+            >
+            <a href="projects.html" class="nav-link"
+              ><span class="hash">#</span>projects</a
+            >
+            <a href="about.html" class="nav-link active"
+              ><span class="hash">#</span>about-me</a
+            >
+            <a href="index.html#contacts" class="nav-link"
+              ><span class="hash">#</span>contacts</a
+            >
+            <a href="resume.html" target="_blank" class="nav-link"
+              ><span class="hash">#</span>resume</a
+            >
+          </nav>
         </div>
+      </div>
     </header>
 
     <!-- Background Decorations -->
     <div class="background-decorations">
-        <div class="dots-pattern dots-1"></div>
-        <div class="dots-pattern dots-2"></div>
-        <div class="dots-pattern dots-3"></div>
-        <div class="border-decoration border-1"></div>
-        <div class="border-decoration border-2"></div>
+      <div class="dots-pattern dots-1"></div>
+      <div class="dots-pattern dots-2"></div>
+      <div class="dots-pattern dots-3"></div>
+      <div class="border-decoration border-1"></div>
+      <div class="border-decoration border-2"></div>
     </div>
 
     <!-- Sidebar Media -->
     <div class="sidebar-media">
-        <div class="media-line"></div>
-        <div class="media-icons">
-            <a href="https://github.com/fadhillahramadhan/" class="media-icon">
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
-                    <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
-                </svg>
-            </a>
-       
-        </div>
+      <div class="media-line"></div>
+      <div class="media-icons">
+        <a href="https://github.com/fadhillahramadhan/" class="media-icon">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <path
+              d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z"
+              fill="#ABB2BF"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
-
 
     <!-- Main Content -->
     <main class="main">
-        <!-- Page Title -->
-        <section class="about-page-title">
-            <div class="container">
-                <div class="page-title">
-                    <h1 class="page-title-main">
-                        <span class="slash">/</span><span class="title-text">about-me</span>
-                    </h1>
-                    <p class="page-subtitle">Who am i?</p>
-                </div>
+      <!-- Page Title -->
+      <section class="about-page-title">
+        <div class="container">
+          <div class="page-title">
+            <h1 class="page-title-main">
+              <span class="slash">/</span
+              ><span class="title-text">about-me</span>
+            </h1>
+            <p class="page-subtitle">Who am i?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <p>Hello, i'm Fadhillah!</p>
+              <p>
+                I'm a self-taught fullstack developer based in Yogyakarta,
+                Indonesia. I specialize in building complete web solutions using
+                PHP, Python, and JavaScript. While I can handle the full stack,
+                I'm particularly passionate about backend development - creating
+                robust APIs, designing efficient databases, and building
+                scalable server-side architectures.
+              </p>
+              <p>
+                My expertise spans from frontend interfaces to complex backend
+                systems. I love working with server-side technologies, database
+                optimization, and creating the powerful engines that drive
+                modern web applications. I help businesses build solutions that
+                are not just functional, but scalable and maintainable.
+              </p>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Hello, i'm Fadhillah!</p>
-                        <p>I'm a self-taught fullstack developer based in Yogyakarta, Indonesia. I specialize in building complete web solutions using PHP, Python, and JavaScript. While I can handle the full stack, I'm particularly passionate about backend development - creating robust APIs, designing efficient databases, and building scalable server-side architectures.</p>
-                        <p>My expertise spans from frontend interfaces to complex backend systems. I love working with server-side technologies, database optimization, and creating the powerful engines that drive modern web applications. I help businesses build solutions that are not just functional, but scalable and maintainable.</p>
-                    </div>
-                    <div class="about-image-container">
-                        <div class="about-image">
-                            <img src="assets/images/about-page-image.png" alt="About Fadhillah" class="about-img">
-                        </div>
-                        <div class="dots-pattern dots-about-1"></div>
-                        <div class="dots-pattern dots-about-2"></div>
-                        <div class="about-line"></div>
-                    </div>
-                </div>
+            <div class="about-image-container">
+              <div class="about-image">
+                <img
+                  src="assets/images/about-page-image.png"
+                  alt="About Fadhillah"
+                  class="about-img"
+                />
+              </div>
+              <div class="dots-pattern dots-about-1"></div>
+              <div class="dots-pattern dots-about-2"></div>
+              <div class="about-line"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Experience Section -->
-        <section class="experience-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="hash">#</span>experience
-                    </h2>
+      <!-- Experience Section -->
+      <section class="experience-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title"><span class="hash">#</span>experience</h2>
+          </div>
+          <div class="experience-content">
+            <div class="experience-timeline">
+              <div class="experience-item">
+                <div class="experience-period">
+                  <span class="period-text">Mar 2023 - Present</span>
                 </div>
-                <div class="experience-content">
-                    <div class="experience-timeline">
-                        <div class="experience-item">
-                            <div class="experience-period">
-                                <span class="period-text">Mar 2023 - Present</span>
-                            </div>
-                            <div class="experience-details">
-                                <div class="company-info">
-                                    <div class="company-logo">
-                                        <img src="assets/images/experiece-esoftdream-logo.jpg" alt="PT Esoftdream Solusi Bisnis" class="company-logo-img">
-                                    </div>
-                                    <div class="company-details">
-                                        <h3 class="job-title">Senior Programmer</h3>
-                                        <p class="company-name">PT Esoftdream Solusi Bisnis</p>
-                                        <p class="job-type">Contract • Yogyakarta, Indonesia • Hybrid</p>
-                                        <p class="duration">2 yrs 3 mos</p>
-                                        <div class="skills-tags">
-                                            <span class="skill-tag">PHP</span>
-                                            <span class="skill-tag">Laravel</span>
-                                            <span class="skill-tag">JavaScript</span>
-                                            <span class="skill-tag">Node.js</span>
-                                            <span class="skill-tag">MySQL</span>
-                                            <span class="skill-tag">PostgreSQL</span>
-                                            <span class="skill-tag">Docker</span>
-                                            <span class="skill-tag">API Development</span>
-                                            <span class="skill-tag">Team Leadership</span>
-                                            <span class="skill-tag">Code Review</span>
-                                            <span class="skill-tag">System Architecture</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="job-description">
-                                    <p>Leading backend development projects and mentoring junior developers. Specialized in building scalable web applications using modern technologies.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="experience-item">
-                            <div class="experience-period">
-                                <span class="period-text">Sep 2022 - Feb 2023</span>
-                            </div>
-                            <div class="experience-details">
-                                <div class="company-info">
-                                    <div class="company-logo">
-                                        <img src="assets/images/experiece-nearven-logo.jpg" alt="PT Nearven Inovasi Digital" class="company-logo-img">
-                                    </div>
-                                    <div class="company-details">
-                                        <h3 class="job-title">Back End Developer</h3>
-                                        <p class="company-name">PT Nearven Inovasi Digital</p>
-                                        <p class="job-type">Contract • 6 mos</p>
-                                        <div class="skills-tags">
-                                            <span class="skill-tag">Prisma</span>
-                                            <span class="skill-tag">Back-End Web Development</span>
-                                            <span class="skill-tag">Docker</span>
-                                            <span class="skill-tag">MySQL</span>
-                                            <span class="skill-tag">Redis</span>
-                                            <span class="skill-tag">WebRTC</span>
-                                            <span class="skill-tag">PostgreSQL</span>
-                                            <span class="skill-tag">TypeScript</span>
-                                            <span class="skill-tag">Laravel</span>
-                                            <span class="skill-tag">Content Delivery Networks</span>
-                                            <span class="skill-tag">Google Analytics</span>
-                                            <span class="skill-tag">Express.js</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="job-description">
-                                    <p>Developed robust backend systems and APIs using modern frameworks. Focused on database optimization and server-side architecture.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="experience-item">
-                            <div class="experience-period">
-                                <span class="period-text">Feb 2020 - Aug 2022</span>
-                            </div>
-                            <div class="experience-details">
-                                <div class="company-info">
-                                    <div class="company-logo">
-                                        <img src="assets/images/experiece-netsolmind-logo.png" alt="PT. NETINDO SOLUTION GROUP" class="company-logo-img">
-                                    </div>
-                                    <div class="company-details">
-                                        <h3 class="job-title">Back End Developer</h3>
-                                        <p class="company-name">PT. NETINDO SOLUTION GROUP</p>
-                                        <p class="job-type">Contract • 2 yrs 7 mos</p>
-                                        <div class="skills-tags">
-                                            <span class="skill-tag">Node.js</span>
-                                            <span class="skill-tag">Back-End Web Development</span>
-                                            <span class="skill-tag">JavaScript</span>
-                                            <span class="skill-tag">Servers</span>
-                                            <span class="skill-tag">Sequelize.js</span>
-                                            <span class="skill-tag">CodeIgniter</span>
-                                            <span class="skill-tag">MySQL</span>
-                                            <span class="skill-tag">HTML</span>
-                                            <span class="skill-tag">Express.js</span>
-                                            <span class="skill-tag">Vue.js</span>
-                                            <span class="skill-tag">Socket.io</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="job-description">
-                                    <p>Built and maintained backend services for enterprise applications. Worked with Node.js and various database technologies to deliver scalable solutions.</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="experience-details">
+                  <div class="company-info">
+                    <div class="company-logo">
+                      <img
+                        src="assets/images/experiece-esoftdream-logo.jpg"
+                        alt="PT Esoftdream Solusi Bisnis"
+                        class="company-logo-img"
+                      />
                     </div>
+                    <div class="company-details">
+                      <h3 class="job-title">Senior Programmer</h3>
+                      <p class="company-name">PT Esoftdream Solusi Bisnis</p>
+                      <p class="job-type">
+                        Contract • Yogyakarta, Indonesia • Hybrid
+                      </p>
+                      <p class="duration">2 yrs 3 mos</p>
+                      <div class="skills-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">System Architecture</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-description">
+                    <p>
+                      Leading backend development projects and mentoring junior
+                      developers. Specialized in building scalable web
+                      applications using modern technologies.
+                    </p>
+                  </div>
                 </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-period">
+                  <span class="period-text">Sep 2022 - Feb 2023</span>
+                </div>
+                <div class="experience-details">
+                  <div class="company-info">
+                    <div class="company-logo">
+                      <img
+                        src="assets/images/experiece-nearven-logo.jpg"
+                        alt="PT Nearven Inovasi Digital"
+                        class="company-logo-img"
+                      />
+                    </div>
+                    <div class="company-details">
+                      <h3 class="job-title">Back End Developer</h3>
+                      <p class="company-name">PT Nearven Inovasi Digital</p>
+                      <p class="job-type">Contract • 6 mos</p>
+                      <div class="skills-tags">
+                        <span class="skill-tag">Prisma</span>
+                        <span class="skill-tag">Back-End Web Development</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">WebRTC</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Content Delivery Networks</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">Express.js</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-description">
+                    <p>
+                      Developed robust backend systems and APIs using modern
+                      frameworks. Focused on database optimization and
+                      server-side architecture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-period">
+                  <span class="period-text">Feb 2020 - Aug 2022</span>
+                </div>
+                <div class="experience-details">
+                  <div class="company-info">
+                    <div class="company-logo">
+                      <img
+                        src="assets/images/experiece-netsolmind-logo.png"
+                        alt="PT. NETINDO SOLUTION GROUP"
+                        class="company-logo-img"
+                      />
+                    </div>
+                    <div class="company-details">
+                      <h3 class="job-title">Back End Developer</h3>
+                      <p class="company-name">PT. NETINDO SOLUTION GROUP</p>
+                      <p class="job-type">Contract • 2 yrs 7 mos</p>
+                      <div class="skills-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Back-End Web Development</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Servers</span>
+                        <span class="skill-tag">Sequelize.js</span>
+                        <span class="skill-tag">CodeIgniter</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Socket.io</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-description">
+                    <p>
+                      Built and maintained backend services for enterprise
+                      applications. Worked with Node.js and various database
+                      technologies to deliver scalable solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Education Section -->
-        <section class="education-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="hash">#</span>education
-                    </h2>
-                </div>
-                <div class="education-content">
-                    <div class="education-item">
-                        <div class="education-period">
-                            <span class="period-text">Aug 2021 - May 2025</span>
-                        </div>
-                        <div class="education-details">
-                            <div class="university-info">
-                                <div class="university-logo">
-                                    <img src="assets/images/education-utdi-logo.jpg" alt="Universitas Teknologi Digital Indonesia" class="university-logo-img">
-                                </div>
-                                <div class="university-details">
-                                    <h3 class="degree-title">Bachelor of Computer Science</h3>
-                                    <p class="university-name">Universitas Teknologi Digital Indonesia</p>
-                                    <p class="degree-field">Informatika</p>
-                                    <div class="academic-info">
-                                        <span class="gpa">GPA: 3.5/4.0</span>
-                                        <span class="grade-status">Bachelor deegree of informatics</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="education-description">
-                                <p>Focused on software engineering, database systems, and web development. Gained comprehensive knowledge in programming languages, algorithms, and system design.</p>
-                            </div>
-                        </div>
+      <!-- Education Section -->
+      <section class="education-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title"><span class="hash">#</span>education</h2>
+          </div>
+          <div class="education-content">
+            <div class="education-item">
+              <div class="education-period">
+                <span class="period-text">Aug 2021 - May 2025</span>
+              </div>
+              <div class="education-details">
+                <div class="university-info">
+                  <div class="university-logo">
+                    <img
+                      src="assets/images/education-utdi-logo.jpg"
+                      alt="Universitas Teknologi Digital Indonesia"
+                      class="university-logo-img"
+                    />
+                  </div>
+                  <div class="university-details">
+                    <h3 class="degree-title">Bachelor of Computer Science</h3>
+                    <p class="university-name">
+                      Universitas Teknologi Digital Indonesia
+                    </p>
+                    <p class="degree-field">Informatika</p>
+                    <div class="academic-info">
+                      <span class="gpa">GPA: 3.5/4.0</span>
+                      <span class="grade-status"
+                        >Bachelor deegree of informatics</span
+                      >
                     </div>
+                  </div>
                 </div>
+                <div class="education-description">
+                  <p>
+                    Focused on software engineering, database systems, and web
+                    development. Gained comprehensive knowledge in programming
+                    languages, algorithms, and system design.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
-        <section class="skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="hash">#</span>skills
-                    </h2>
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title"><span class="hash">#</span>skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <div class="skill-header">
+                <h3>Languages</h3>
+              </div>
+              <div class="skill-divider"></div>
+              <div class="skill-items">
+                <div class="skill-row">
+                  <span>PHP</span>
+                  <span>JavaScript</span>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <div class="skill-header">
-                            <h3>Languages</h3>
-                        </div>
-                        <div class="skill-divider"></div>
-                        <div class="skill-items">
-                            <div class="skill-row">
-                                <span>PHP</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Python</span>
-                                <span>TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-header">
-                            <h3>Databases</h3>
-                        </div>
-                        <div class="skill-divider"></div>
-                        <div class="skill-items">
-                            <div class="skill-row">
-                                <span>SQLite</span>
-                                <span>PostgreSQL</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Mongo</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-header">
-                            <h3>Other</h3>
-                        </div>
-                        <div class="skill-divider"></div>
-                        <div class="skill-items">
-                            <div class="skill-row">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>EJS</span>
-                                <span>SCSS</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>REST</span>
-                                <span>Jinja</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-header">
-                            <h3>DevOps & Tools</h3>
-                        </div>
-                        <div class="skill-divider"></div>
-                        <div class="skill-items">
-                            <div class="skill-row">
-                                <span>Docker</span>
-                                <span>AWS</span>
-                                <span>Linux</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Git</span>
-                                <span>CI/CD</span>
-                                <span>Nginx</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Kubernetes</span>
-                                <span>Jenkins</span>
-                                <span>VSCode</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Terraform</span>
-                                <span>Ansible</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-header">
-                            <h3>Frameworks</h3>
-                        </div>
-                        <div class="skill-divider"></div>
-                        <div class="skill-items">
-                            <div class="skill-row">
-                                <span>Laravel</span>
-                                <span>React</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Vue.js</span>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="skill-row">
-                                <span>Flask</span>
-                                <span>Express.js</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-row">
+                  <span>Python</span>
+                  <span>TypeScript</span>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Fun Facts Section -->
-        <section class="fun-facts-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="hash">#</span>my-fun-facts
-                    </h2>
+            <div class="skill-category">
+              <div class="skill-header">
+                <h3>Databases</h3>
+              </div>
+              <div class="skill-divider"></div>
+              <div class="skill-items">
+                <div class="skill-row">
+                  <span>SQLite</span>
+                  <span>PostgreSQL</span>
                 </div>
-                <div class="fun-facts-content">
-                    <div class="facts-grid">
-                        <div class="facts-column">
-                            <div class="fact-card">
-                                <span>I like winter more than summer</span>
-                            </div>
-                            <div class="fact-card">
-                                <span>I love going to the gym</span>
-                            </div>
-                        </div>
-                        <div class="facts-column">
-                            <div class="fact-card">
-                                <span>I like game</span>
-                            </div>
-                            <div class="fact-card">
-                                <span>I love to travel</span>
-                            </div>
-                        </div>
-                        <div class="facts-column">
-                            <div class="fact-card">
-                                <span>Im single</span>
-                            </div>
-                            <div class="fact-card">
-                                <span>I am informatics bachelor</span>
-                            </div>
-                        </div>
-                        <div class="facts-column">
-                            <div class="fact-card">
-                                <span>I have 3 siblings</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="facts-decoration">
-                        <div class="dots-pattern dots-facts"></div>
-                        <div class="facts-logo">
-                            <div class="logo-grid">
-                                <div class="logo-square filled"></div>
-                                <div class="logo-square filled"></div>
-                                <div class="logo-square filled"></div>
-                                <div class="logo-square filled"></div>
-                                <div class="logo-square filled"></div>
-                                <div class="logo-square"></div>
-                                <div class="logo-square"></div>
-                                <div class="logo-square"></div>
-                                <div class="logo-square"></div>
-                                <div class="logo-square"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-row">
+                  <span>Mongo</span>
                 </div>
+              </div>
             </div>
-        </section>
+
+            <div class="skill-category">
+              <div class="skill-header">
+                <h3>Other</h3>
+              </div>
+              <div class="skill-divider"></div>
+              <div class="skill-items">
+                <div class="skill-row">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>EJS</span>
+                  <span>SCSS</span>
+                </div>
+                <div class="skill-row">
+                  <span>REST</span>
+                  <span>Jinja</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-header">
+                <h3>DevOps & Tools</h3>
+              </div>
+              <div class="skill-divider"></div>
+              <div class="skill-items">
+                <div class="skill-row">
+                  <span>Docker</span>
+                  <span>AWS</span>
+                  <span>Linux</span>
+                </div>
+                <div class="skill-row">
+                  <span>Git</span>
+                  <span>CI/CD</span>
+                  <span>Nginx</span>
+                </div>
+                <div class="skill-row">
+                  <span>Kubernetes</span>
+                  <span>Jenkins</span>
+                  <span>VSCode</span>
+                </div>
+                <div class="skill-row">
+                  <span>Terraform</span>
+                  <span>Ansible</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-header">
+                <h3>Frameworks</h3>
+              </div>
+              <div class="skill-divider"></div>
+              <div class="skill-items">
+                <div class="skill-row">
+                  <span>Laravel</span>
+                  <span>React</span>
+                </div>
+                <div class="skill-row">
+                  <span>Vue.js</span>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-row">
+                  <span>Flask</span>
+                  <span>Express.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fun Facts Section -->
+      <section class="fun-facts-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="hash">#</span>my-fun-facts
+            </h2>
+          </div>
+          <div class="fun-facts-content">
+            <div class="facts-grid">
+              <div class="facts-column">
+                <div class="fact-card">
+                  <span>I like winter more than summer</span>
+                </div>
+                <div class="fact-card">
+                  <span>I love going to the gym</span>
+                </div>
+              </div>
+              <div class="facts-column">
+                <div class="fact-card">
+                  <span>I like game</span>
+                </div>
+                <div class="fact-card">
+                  <span>I love to travel</span>
+                </div>
+              </div>
+              <div class="facts-column">
+                <div class="fact-card">
+                  <span>Im single</span>
+                </div>
+                <div class="fact-card">
+                  <span>I am informatics bachelor</span>
+                </div>
+              </div>
+              <div class="facts-column">
+                <div class="fact-card">
+                  <span>I have 3 siblings</span>
+                </div>
+              </div>
+            </div>
+            <div class="facts-decoration">
+              <div class="dots-pattern dots-facts"></div>
+              <div class="facts-logo">
+                <div class="logo-grid">
+                  <div class="logo-square filled"></div>
+                  <div class="logo-square filled"></div>
+                  <div class="logo-square filled"></div>
+                  <div class="logo-square filled"></div>
+                  <div class="logo-square filled"></div>
+                  <div class="logo-square"></div>
+                  <div class="logo-square"></div>
+                  <div class="logo-square"></div>
+                  <div class="logo-square"></div>
+                  <div class="logo-square"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-                <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-brand">
-                        <div class="logo">
-                            <div class="logo-icon">
-                                <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg">
-                            </div>
-                            <span class="logo-text">Fadhillah</span>
-                        </div>
-                        <p class="footer-email">fadhillahramadhan01@gmail.com</p>
-                    </div>
-                                            <p class="footer-description">Fullstack developer</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-brand">
+              <div class="logo">
+                <div class="logo-icon">
+                  <img src="assets/svg/Logo.svg" alt="Logo" class="logo-svg" />
                 </div>
-                <div class="footer-social">
-                    <h3>Media</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/fadhillahramadhan/" class="social-link">
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                <path d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z" fill="#ABB2BF"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <span class="logo-text">Fadhillah</span>
+              </div>
+              <p class="footer-email">fadhillahramadhan01@gmail.com</p>
             </div>
-            <p class="footer-copyright">© Copyright 2022. Made by Fadhillah</p>
+            <p class="footer-description">Fullstack developer</p>
+          </div>
+          <div class="footer-social">
+            <h3>Media</h3>
+            <div class="social-links">
+              <a
+                href="https://github.com/fadhillahramadhan/"
+                class="social-link"
+              >
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+                  <path
+                    d="M10.5 0C4.7 0 0 4.5 0 10.1C0 14.5 2.9 18.2 7 19.5C7.5 19.6 7.7 19.3 7.7 19V17.4C4.8 18 4.2 16.1 4.2 16.1C3.8 15 3.1 14.7 3.1 14.7C2.1 14.1 3.2 14.1 3.2 14.1C4.3 14.2 4.8 15.1 4.8 15.1C5.8 16.6 7.4 16.1 7.7 15.9C7.8 15.3 8.1 14.8 8.4 14.6C6.1 14.4 3.7 13.5 3.7 9.6C3.7 8.5 4.1 7.6 4.8 6.9C4.7 6.7 4.4 5.7 4.9 4.3C4.9 4.3 5.8 4 7.7 5.3C8.6 5.1 9.6 5 10.5 5C11.4 5 12.4 5.1 13.3 5.3C15.2 4 16.1 4.3 16.1 4.3C16.6 5.7 16.3 6.7 16.2 6.9C16.9 7.6 17.3 8.5 17.3 9.6C17.3 13.5 14.9 14.4 12.6 14.6C13 14.9 13.3 15.5 13.3 16.4V19C13.3 19.3 13.5 19.6 14 19.5C18.1 18.2 21 14.5 21 10.1C21 4.5 16.3 0 10.5 0Z"
+                    fill="#ABB2BF"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
+        <p class="footer-copyright">© Copyright 2022. Made by Fadhillah</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
