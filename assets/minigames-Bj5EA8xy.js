@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./lucide-CJx16_jI.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-B4ssLW3D.js";document.querySelector(`#app`).innerHTML=`
 <nav class="top-nav">
   <a href="/index.html#home"><i data-lucide="home" width="20" height="20"></i></a>
   <a href="/projects.html"><i data-lucide="folder" width="20" height="20"></i></a>
