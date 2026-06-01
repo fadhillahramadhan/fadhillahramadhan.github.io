@@ -1,4 +1,9 @@
-import{n as e,r as t,t as n}from"./lucide-CTJ1vrFl.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-CFYU2_KU.js";document.querySelector(`#app`).innerHTML=`
+<div class="landscape-warning">
+  <i data-lucide="smartphone" width="48" height="48" style="animation: rotatePhone 2s infinite ease-in-out;"></i>
+  <h2>Please Rotate Your Device</h2>
+  <p>Fadhillah OS is designed for a wider screen. Rotate to landscape for the full experience.</p>
+</div>
 <div class="desktop-environment">
   <div class="desktop-workspace">
     <div class="desktop-icon" data-app="breach">
