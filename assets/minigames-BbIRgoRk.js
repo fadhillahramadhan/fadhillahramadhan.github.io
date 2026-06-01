@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./lucide-CMUyMhur.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-BWopIJvv.js";document.querySelector(`#app`).innerHTML=`
 <div class="desktop-environment">
   <div class="desktop-workspace">
     <div class="desktop-icon" data-app="breach">
