@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./lucide-CFYU2_KU.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-BMtAO4Vh.js";document.querySelector(`#app`).innerHTML=`
 <div class="landscape-warning">
   <i data-lucide="smartphone" width="48" height="48" style="animation: rotatePhone 2s infinite ease-in-out;"></i>
   <h2>Please Rotate Your Device</h2>
