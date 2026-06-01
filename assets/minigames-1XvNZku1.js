@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./lucide-BneWdwJZ.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-DoyopZZs.js";document.querySelector(`#app`).innerHTML=`
 <div class="desktop-environment">
   <div class="desktop-workspace">
     <div class="desktop-icon" data-app="breach">
@@ -20,9 +20,9 @@ import{n as e,r as t,t as n}from"./lucide-BneWdwJZ.js";document.querySelector(`#
     <div class="os-titlebar" data-window="breach">
       <div class="os-title"><i data-lucide="terminal-square" width="14" height="14" color="#ef4444"></i> System Breach Simulator</div>
       <div class="os-controls">
-        <button class="os-control-btn os-minimize" data-action="minimize" data-window="breach"></button>
-        <button class="os-control-btn os-maximize" data-action="maximize" data-window="breach"></button>
-        <button class="os-control-btn os-close" data-action="close" data-window="breach"></button>
+        <button class="os-control-btn os-minimize" data-action="minimize" data-window="breach"><i data-lucide="minus"></i></button>
+        <button class="os-control-btn os-maximize" data-action="maximize" data-window="breach"><i data-lucide="square"></i></button>
+        <button class="os-control-btn os-close" data-action="close" data-window="breach"><i data-lucide="x"></i></button>
       </div>
     </div>
     <div class="os-content" style="padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -42,9 +42,9 @@ import{n as e,r as t,t as n}from"./lucide-BneWdwJZ.js";document.querySelector(`#
     <div class="os-titlebar" data-window="bird">
       <div class="os-title"><i data-lucide="bird" width="14" height="14" color="#eab308"></i> Cyber Bird</div>
       <div class="os-controls">
-        <button class="os-control-btn os-minimize" data-action="minimize" data-window="bird"></button>
-        <button class="os-control-btn os-maximize" data-action="maximize" data-window="bird"></button>
-        <button class="os-control-btn os-close" data-action="close" data-window="bird"></button>
+        <button class="os-control-btn os-minimize" data-action="minimize" data-window="bird"><i data-lucide="minus"></i></button>
+        <button class="os-control-btn os-maximize" data-action="maximize" data-window="bird"><i data-lucide="square"></i></button>
+        <button class="os-control-btn os-close" data-action="close" data-window="bird"><i data-lucide="x"></i></button>
       </div>
     </div>
     <div class="os-content" style="padding: 24px; display: flex; align-items: center; justify-content: center;">
@@ -64,9 +64,9 @@ import{n as e,r as t,t as n}from"./lucide-BneWdwJZ.js";document.querySelector(`#
     <div class="os-titlebar" data-window="memory">
       <div class="os-title"><i data-lucide="layers" width="14" height="14" color="#3b82f6"></i> Memory Match</div>
       <div class="os-controls">
-        <button class="os-control-btn os-minimize" data-action="minimize" data-window="memory"></button>
-        <button class="os-control-btn os-maximize" data-action="maximize" data-window="memory"></button>
-        <button class="os-control-btn os-close" data-action="close" data-window="memory"></button>
+        <button class="os-control-btn os-minimize" data-action="minimize" data-window="memory"><i data-lucide="minus"></i></button>
+        <button class="os-control-btn os-maximize" data-action="maximize" data-window="memory"><i data-lucide="square"></i></button>
+        <button class="os-control-btn os-close" data-action="close" data-window="memory"><i data-lucide="x"></i></button>
       </div>
     </div>
     <div class="os-content" style="padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
