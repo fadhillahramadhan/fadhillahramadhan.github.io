@@ -1,4 +1,4 @@
-import{n as e,r as t,t as n}from"./lucide-BkP-l9_A.js";document.querySelector(`#app`).innerHTML=`
+import{n as e,r as t,t as n}from"./lucide-BkP-l9_A.js";`serviceWorker`in navigator&&window.addEventListener(`load`,()=>{navigator.serviceWorker.register(`/sw.js`).catch(e=>{console.error(`ServiceWorker registration failed: `,e)})}),document.querySelector(`#app`).innerHTML=`
 <div class="landscape-warning">
   <i data-lucide="smartphone" width="48" height="48" style="animation: rotatePhone 2s infinite ease-in-out;"></i>
   <h2>Please Rotate Your Device</h2>
